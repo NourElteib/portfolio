@@ -222,11 +222,11 @@ p {
    
     height: 400px;
     
-    object-fit: cover;
+    object-fit: contain;
     filter: grayscale(25%);
     margin-top: 50px;
     border-radius: 30px;
-   
+    
     
 }
 .proImg img:hover{
@@ -264,5 +264,5 @@ p {
 .icons a{
     margin-right: 20px;
     font-size: x-large;
-    
+   
 }
