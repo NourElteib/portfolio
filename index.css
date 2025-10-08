@@ -218,16 +218,14 @@ p {
     background-color: var(--main) !important;
 }
 
+
+
 .proImg img{
    
     height: 400px;
-    
-    object-fit: contain;
     filter: grayscale(25%);
     margin-top: 50px;
     border-radius: 30px;
-    
-    
 }
 .proImg img:hover{
    filter:contrast(90%);
