@@ -3,6 +3,7 @@
     --text:#64ffda;
     --secondary:#7983A0;
     --dark-blue:#112240;
+    --border: rgba(255, 255, 255, 0.1);
 }
 body{
     background-color: var(--main);
@@ -128,7 +129,7 @@ p {
 }
 
 .aboutt{
-    background-color: var(--dark-blue);
+    background-color: var(--main);
     margin-top: 80px;
     height: fit-content;
     width: 100% !important;
@@ -144,10 +145,11 @@ p {
 .head{
     color: #fff;
     margin-top: 40px;
-    text-align: start;
+    text-align: center;
     padding-bottom: 15px;
     font-weight: larger;
     margin-right: 50px;
+    
 }
 
 .myphoto{
@@ -195,7 +197,7 @@ p {
     
 }
 .tec h6{
-    color: var(--text);
+    color: var(---blue);
     letter-spacing: 1px;
     margin-left: 5px;
     max-width: 300px;
@@ -211,7 +213,9 @@ p {
     grid-template-columns: repeat(2, minmax(140px, 1fr));
     gap: 10px;
     padding: 0;
-
+}
+.technologies i{
+    color:var(--text);
 }
 
 .projects{
@@ -226,6 +230,7 @@ p {
     filter: grayscale(25%);
     margin-top: 50px;
     border-radius: 30px;
+    
 }
 .proImg img:hover{
    filter:contrast(90%);
@@ -242,6 +247,7 @@ p {
     font-size: medium;
     padding: 30px;
     border-radius: 10px;
+    border: 1px var(--border) solid;
    
 }
 .proDetails ul{
@@ -254,7 +260,7 @@ p {
     padding: 3px 10px;
     background-color: var(--main);
     border-radius: 6px;
-    border: 1px var(--secondary) solid;
+    border: 1px var(--border) solid;
     text-align: center;
    margin-right: 7px;
    font-size:small;
@@ -263,4 +269,28 @@ p {
     margin-right: 20px;
     font-size: x-large;
    
+}
+#Experience{
+    background-color: var(--main);
+}
+
+.personalExperience{
+    background-color: var(--dark-blue);
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px rgba(255, 255, 255, 0.1) solid;
+    margin-bottom: 40px;
+    
+}  
+
+.personalExperience > h5{
+    color: #fff;
+   
+}
+.personalExperience i{
+    color: var(--text);
+    margin-right: 5px;
+}
+.personalExperience >div{
+    margin-top: 20px;
 }
