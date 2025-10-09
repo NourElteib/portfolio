@@ -280,8 +280,18 @@ p {
     border-radius: 10px;
     border: 1px rgba(255, 255, 255, 0.1) solid;
     margin-bottom: 40px;
-    
+position: relative;
 }  
+.personalExperience::before {
+  content: "";
+  position: absolute;
+  left: 0%;
+  top: 10%;
+  width: 2px;
+  height: 80%;
+  background-color: var(--text);
+  border-radius: 5px;
+}
 
 .personalExperience > h5{
     color: #fff;
@@ -294,3 +304,4 @@ p {
 .personalExperience >div{
     margin-top: 20px;
 }
+
