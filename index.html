@@ -126,7 +126,7 @@ Beyond coding, you’ll often find me mentoring fellow developers, contributing 
         <img class="col-12 col-md-8"  src="photos/Screenshot 2025-10-07 211444.png" alt="">
       </article>
 
-      <article class="proDetails d-flex row justify-content-end mb-4">
+      <section class="proDetails d-flex row justify-content-end mb-4">
         <div class="col-12 col-md-7">
           <p style="color: var(--text); font-weight: lighter;">Featured Project</p>
         <h2>Personal Portfolio</h2>
@@ -144,12 +144,12 @@ Beyond coding, you’ll often find me mentoring fellow developers, contributing 
           <a style="font-size: larger;" href="https://nourelteib.github.io/portfolio/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </div>
         </div>
-      </article>
-      <article class="proImg d-flex row justify-content-start">
+      </section>
+      <section class="proImg d-flex row justify-content-start">
         <img class="col-12 col-md-8"  src="photos/Screenshot 2025-10-08 000558.png" alt="">
-      </article>
+      </section>
 
-      <article class="proDetails d-flex row justify-content-end mb-4">
+      <section class="proDetails d-flex row justify-content-end mb-4">
         <div class="col-12 col-md-7">
           <p style="color: var(--text); font-weight: lighter;">Featured Project</p>
         <h2>KhedmaNow</h2>
@@ -168,12 +168,12 @@ It helps users find what they need quickly with a clean design and an organized 
           <a style="font-size: larger;" href="https://alitobal-06.github.io/DEPI_Project/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </div>
         </div>
-      </article>
-      <article class="proImg d-flex row justify-content-start">
+      </section>
+      <section class="proImg d-flex row justify-content-start">
         <img class="col-12 col-md-8"  src="Screenshot 2025-10-08 003859.png" alt="">
-      </article>
+      </section>
 
-      <article class="proDetails d-flex row justify-content-end mb-4">
+      <section class="proDetails d-flex row justify-content-end mb-4">
         <div class="col-12 col-md-7">
           <p style="color: var(--text); font-weight: lighter;">Featured Project</p>
         <h2>Student Clearence</h2>
@@ -192,7 +192,7 @@ It tracks department approvals digitally and saves time compared to traditional 
           <a style="font-size: larger;" href="https://alitobal-06.github.io/DEPI_Project/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </div>
         </div>
-      </article>
+      </section>
     </section>
    </section>
    
@@ -331,11 +331,11 @@ preparing for ECPC contests</h6>
           nourhan24803@gmail.com
         </article>
         <article>
-          📌
+          📍
          Qena , Egypt
         </article>
         <article>
-          🗓️
+          ⏰
           Available for freelance work
         </article>
          
@@ -409,6 +409,21 @@ function typeEffect() {
 }
 
 typeEffect();
+
+const sections = document.querySelectorAll("section");
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+});
+
+sections.forEach(section => {
+  observer.observe(section);
+});
+
 </script>
 
 
