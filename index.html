@@ -40,6 +40,8 @@
         </ul>
         <button class="Resume btn text-center"><a target="_blank "href="Nourhan Ahmed ElteibCV (3).pdf"  >Resume</a>
 </button>
+<button id="mode-toggle" class="btn btn-outline">🌙</button>
+
     </div>
         </div> 
         
@@ -214,7 +216,7 @@ It tracks department approvals digitally and saves time compared to traditional 
             <h6>
             Computer Science department</h6>
           <h6>
-            GPA: 3.14/4.00</h6>
+            GPA: 3.41/4.00</h6>
           </div>
         </section>
 
@@ -268,7 +270,7 @@ preparing for ECPC contests</h6>
       <section class="d-flex row justify-content-center ">
         <article class="sendMassage col-11 col-lg-4 me-lg-4">
 
-          <h5 style="color: #fff; ">Send me a message</h5>
+          <h5 style="color: var(--white);; ">Send me a message</h5>
         <form action="" class="row "> 
   
   
@@ -324,8 +326,8 @@ preparing for ECPC contests</h6>
         <section class="col-11 col-lg-4">
 
           <!--Connect-->
-          <article cle class="connect row">
-            <h5 style="color: #fff;">Let's connect</h5>
+          <article  class="connect row">
+            <h5 style="color: var(--white);">Let's connect</h5>
         <article>
           <i class="fas fa-envelope"></i>
           nourhan24803@gmail.com
@@ -350,7 +352,7 @@ preparing for ECPC contests</h6>
 
       <!--Response-->
       <article class="response row">
-        <h6 style="color: #fff;">Quick Response</h6>
+        <h6 style="color: var(--white);">Quick Response</h6>
         <p >I typically respond to emails within 24 hours. For urgent matters, feel free to reach out on LinkedIn or Twitter for a faster response.</p>
       </article>
         </section>
@@ -423,6 +425,19 @@ const observer = new IntersectionObserver(entries => {
 sections.forEach(section => {
   observer.observe(section);
 });
+
+
+
+const btn = document.getElementById("mode-toggle");
+let nav = document.querySelector(".navbar");
+
+btn.addEventListener("click", () => {
+  document.body.classList.toggle("light-mode");
+  btn.textContent = document.body.classList.contains("light-mode") ? "🌙" : "☀️";
+  nav.classList.toggle("navbar-dark");
+nav.classList.toggle("navbar-light");
+});
+
 
 </script>
 

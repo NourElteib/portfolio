@@ -4,6 +4,7 @@
     --secondary:#7983A0;
     --dark-blue:#112240;
     --border: rgba(255, 255, 255, 0.1);
+    --white:#fff;
 }
 body{
     background-color: var(--main);
@@ -16,7 +17,7 @@ html {
 }
 
 .Home {
-  background-color: #0a192f; 
+  background-color: var(--main); 
   background-image:
     radial-gradient(1px 1px at 10px 10px, #64ffda, transparent),
     radial-gradient(1px 1px at 40px 60px, #64ffda, transparent),
@@ -44,6 +45,7 @@ html {
 .nav-item{
     margin-left: 10px ;
     margin-right: 10px ;
+    font-weight: 500;
 }
 .navbar-brand{
     color: var(--text);
@@ -59,11 +61,11 @@ nav.navbar {
 }
 .Resume{
     background-color: var(--main);
-    color: #64ffda !important;
+    color: var(--text) !important;
     max-width: 80px;
     height: 40px;
     border-radius: 4px;
-    border: #64ffda 1px solid;
+    border: var(--text) 1px solid;
     text-align: center;
     display: flex;
     align-items: center;   
@@ -96,7 +98,7 @@ nav.navbar {
 .View{
     background-color: var(--main);
     color: var(--text) !important;
-    border: #64ffda 1px solid !important;
+    border: var(--text) 2px solid !important;
      width: 150px;
      margin: 20px;
 }
@@ -108,7 +110,7 @@ nav.navbar {
     width: 150px;
 }
 h1{
-    color: #fff;
+    color: var(--white);
     font-size: xx-large;
     font-weight:bolder;
     margin: 20px;
@@ -147,7 +149,7 @@ p {
 
 }
 .head{
-    color: #fff;
+    color: var(--white);
     margin-top: 40px;
     text-align: center;
     padding-bottom: 15px;
@@ -240,10 +242,10 @@ p {
    filter:contrast(90%);
 }
 .proDetails h2{
-    color: #fff;
+    color: var(--white);
     font-weight: bold;
     font-size: larger;
-    letter-spacing: 2px;
+    
     margin-top: 15px;
 }
 .Details{
@@ -283,7 +285,8 @@ p {
     background-color: var(--dark-blue);
     padding: 30px;
     border-radius: 10px;
-    border: 1px rgba(255, 255, 255, 0.1) solid;
+    border: 1px var(--border) solid;
+   
     margin-bottom: 40px;
 position: relative;
 }  
@@ -299,7 +302,7 @@ position: relative;
 }
 
 .personalExperience > h5{
-    color: #fff;
+    color: var(--white);
    
 }
 .personalExperience i{
@@ -333,7 +336,7 @@ position: relative;
     margin-bottom: 20px;
 }
 .sendMassage label{
-    color: #E6F1FF;
+    color: var(--white);
     margin-bottom: 5px;
 }
 .sendMassage input{
@@ -343,7 +346,7 @@ position: relative;
     padding: 5px 0px 5px 10px;
     margin-bottom: 15px;
    color:#E6F1FF ;
-   caret-color: #fff;
+   caret-color: var(--white);
 }
 .sendMassage input::placeholder{
     color: var(--secondary) !important;
@@ -379,7 +382,7 @@ input:-webkit-autofill {
     margin-right: 5px;
 }
 .connect >p{
-   color: #fff;
+   color: var(--white);
    margin-top: 20px;
   
 }
@@ -431,4 +434,31 @@ section {
 section.show {
   opacity: 1;
   transform: translateY(0);
+}
+.light-mode {
+  --main: #f0f4f8;
+  --dark-blue:#FFFFFF;
+  --text:  #0D9488;
+  --secondary: #475569;
+  --secondaryy: #0F172A;
+  --white:#0F172A;
+  --border:#e0e0e0;
+
+  #typed,.head{
+    color: #0F172A !important;
+  }
+  .sendMassage input ,
+  .proDetails ul li{
+    background-color: #F3F4F6;
+  }
+
+  .personalExperience{
+     box-shadow: 1px 1px 2px #e0e0e0;
+  }
+}
+#mode-toggle{
+    background-color: var(--main);
+    width: 50px;
+    margin-left: 10px;
+    
 }
