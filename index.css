@@ -369,7 +369,7 @@ position: relative;
 }
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 1000px var(--main) inset !important;
-  -webkit-text-fill-color: #fff !important;
+  -webkit-text-fill-color: var(--white) !important;
  
  
 }
@@ -450,11 +450,15 @@ section.show {
   .sendMassage input ,
   .proDetails ul li{
     background-color: #F3F4F6;
+    color: #0a192f;
+    caret-color: black;
   }
 
   .personalExperience{
      box-shadow: 1px 1px 2px #e0e0e0;
   }
+
+
 }
 .mode,.mode:hover{
     bottom: 100px;    
