@@ -456,9 +456,34 @@ section.show {
      box-shadow: 1px 1px 2px #e0e0e0;
   }
 }
-#mode-toggle{
-    background-color: var(--main);
-    width: 50px;
-    margin-left: 10px;
+.mode{
+    bottom: 100px;    
+  right: 20px;
+  position:fixed;
+  z-index: 30;
+  
+}
+.dark,.dark:hover{
+    background-color: var(--dark-blue);
+    color: var(--text);
+    border-radius: 28px;
+    padding: 15px;
+    margin: 15px;
+    justify-content: center;
+     transition: all 0.4s ease;
+     border: 1px #fff solid;
+}
+.dark:hover{
+   width: 150px; 
+    transform: scale(1.1);
+}
+.light,.light:hover{
     
+    color: var(--text) ;
+    border-radius: 28px;
+    padding: 15px;
+    margin: 15px;
+    justify-content: center;
+    transition: all 0.4s ease;
+    border: 1px var(--text) solid;
 }

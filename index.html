@@ -40,7 +40,7 @@
         </ul>
         <button class="Resume btn text-center"><a target="_blank "href="Nourhan Ahmed ElteibCV (3).pdf"  >Resume</a>
 </button>
-<button id="mode-toggle" class="btn btn-outline">🌙</button>
+  
 
     </div>
         </div> 
@@ -67,10 +67,14 @@
   <a href="mailto:nourhan24803@gmail.com"><i class="fas fa-envelope"></i></a>
 
     </section>
+
+    
+    
     </section>
    
    </section>
-
+<button class="mode d-flex gap-2 btn btn-outline dark"><span style="color: var(--text);">🔆</span> Light Mode</button>
+    
 
    <section id="about" class="aboutt w-100">
     <section class="container  pt-4 ">
@@ -428,14 +432,15 @@ sections.forEach(section => {
 
 
 
-const btn = document.getElementById("mode-toggle");
+const btn = document.querySelector(".mode");
 let nav = document.querySelector(".navbar");
 
 btn.addEventListener("click", () => {
   document.body.classList.toggle("light-mode");
-  btn.textContent = document.body.classList.contains("light-mode") ? "🌙" : "☀️";
+    btn.textContent = document.body.classList.contains("light-mode") ? "🌙 Dark Mode" : "🔆 Light Mode";
   nav.classList.toggle("navbar-dark");
 nav.classList.toggle("navbar-light");
+btn.classList.toggle("light")
 });
 
 
