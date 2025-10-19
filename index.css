@@ -128,10 +128,12 @@ p {
     color: var(--secondary);
     font-size: x-large;
     margin-top: 20px;
+     transition: all 0.2s ease;
 }
 .icons a:hover{
     color: var(--text);
     margin-top: 10px;
+   
 }
 
 .aboutt{
