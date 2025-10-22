@@ -480,7 +480,7 @@ section.show {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px); 
+    transform: translateY(-15px); 
   }
 }
 .dark,.dark:hover{
