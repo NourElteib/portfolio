@@ -14,7 +14,7 @@
   <main>
     <nav class="navbar navbar-expand-lg navbar-dark my-2 ">
         <div class="container d-flex">
-            <div class="navbar-brand">Portfolio</div>
+            <div class="navbar-brand">Nourhan</div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -74,7 +74,9 @@
     </section>
    
    </section>
-<button class="mode d-flex gap-2 btn btn-outline dark"><span style="color: var(--text);">🔆</span> Light Mode</button>
+<button class="mode d-flex gap-2 btn btn-outline dark">
+  <img style="width: 30px;" src="sun.png" alt="">
+</button>
     
 
    <section id="about" class="aboutt w-100">
@@ -392,7 +394,7 @@ preparing for ECPC contests</h6>
 
 
 <script>
-const text = "Nourhan Ahmed";
+const text = "Nourhan Eltieb";
 const typingElement = document.getElementById("typed");
 let index = 0;
 let isDeleting = false;
@@ -438,7 +440,7 @@ let nav = document.querySelector(".navbar");
 
 btn.addEventListener("click", () => {
   document.body.classList.toggle("light-mode");
-    btn.textContent = document.body.classList.contains("light-mode") ? "🌙 Dark Mode" : "🔆 Light Mode";
+    btn.innerHTML = document.body.classList.contains("light-mode") ? `<img style="width: 30px;" src="half-moon.png" alt="">` : `<img style="width: 30px;" src="sun.png" alt="">`;
   nav.classList.toggle("navbar-dark");
 nav.classList.toggle("navbar-light");
 btn.classList.toggle("light")
